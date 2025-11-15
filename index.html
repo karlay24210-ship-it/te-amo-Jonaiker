@@ -179,15 +179,3 @@
 
 </body>
 </html>
-<audio id="miAudio" src="audio/miAudio.mp3" autoplay muted playsinline></audio>
-
-<script>
-  // Después de 1 segundo, le quitamos el mute para que se escuche
-  window.addEventListener('load', () => {
-    const audio = document.getElementById('miAudio');
-    setTimeout(() => {
-      audio.muted = false;
-      audio.play().catch(e => console.log("El usuario debe interactuar:", e));
-    }, 1000);
-  });
-</script>
